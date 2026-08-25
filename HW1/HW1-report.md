@@ -8,35 +8,44 @@ Due: Sunday, September 6, 2026
 
 ### Q1 - URL of GitHub Repo
 
-Insert your answer and explanation here
+https://github.com/Wglav001/CS625
+
+This is the URL of the Github repository I created for this exercise.
 
 ### Q2 - Pull Command
 
-Insert your answer and explanation here
+The pull command sends changes from the remote repository to the local repository. 
 
 ### Q3 - Local Commits
 
-Insert your answer and explanation here
+If a change has been committed locally but does not appear on Github, 
+the change may not have been pushed to the remote repository. 
 
 ## Markdown
 
 ### Q1 - Bulleted List
 
-Insert your answer and explanation here
+- Running
+- Traveling
+- Coding
+
+A bulleted list uses symbols to separate each item without suggesting a particular order. A numbered list uses numbers and is used when the order of the items matters.
 
 ### Q2 - Markdown Paragraph
 
-Insert your answer and explanation here
+This is an *italicized* word, while this text is **bold** and this text is ***bold and italicized***. Code can be displayed using `print("Hello World")`, and this is a link to [GitHub](https://github.com/Wglav001/CS625).
 
 ### Q3 - Animal Image
 
-Insert your answer and explanation here
+I saved an image of a cat in this repository. 
+
+![Image of a Cat](cat.jpg)
 
 ## Tableau
 
 ### Q1 - Region Other Than the South
 
-Insert your answer and explanation here
+![Eastern Sales - Tableau exercise](EasternSalesTableau.png)
 
 ## Google Colab
 
