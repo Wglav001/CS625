@@ -1,6 +1,6 @@
 # Homework 1: Tool Setup
 
-**Insert Your Name Here**  
+**William Glavin**  
 CS 625, Fall 2026  
 Due: Sunday, September 6, 2026
 
@@ -51,44 +51,61 @@ I saved an image of a cat in this repository.
 
 ### Q1 - URL of Google Colab Notebook
 
-Insert your answer and explanation here
+I completed the overview of colaboratory features notebook, made some edits, 
+and saved a copy to my drive : 
+
+[Google Colab Notebook](https://colab.research.google.com/drive/1rh1Mhm6p0fckklUDTx3l5O9CBvuQSq9f?usp=sharing)
 
 ## Python/Seaborn
 
 ### Q1 - First Penguin Image
 
-Insert your answer and explanation here
+![Penguin bill length and depth](penguinsScatter.png)
+
+This scatterplot displays the relationship between penguin bill length and bill depth. Each point represents an observation from the penguin dataset, comparing the relationship and distribution of the two measurements visually.
 
 ### Q2 - Second Penguin Image
 
-Insert your answer and explanation here
+![Penguin body mass](penguinBodyMass.png)
+
+This bar chart compare the average body mass of the three penguin species in the dataset. Gentoo penguins have the highest body mass, and Adelie and Chinstrap penguins have lower body masses.
 
 ### Q3 - Outer Parenthesis
 
-Insert your answer and explanation here
+After removing the outer parentheses, the code produced an IndentationError. The parentheses allow the expression to continue across multiple lines, and without them, Python treats the first line as a complete statement and the indented .add() line throws an error.
+
+From the sidebar chat in Colab : 
+"The error IndentationError: unexpected indent is caused by the indentation of the .add method. To fix this, you can wrap the entire so.Plot and .add chain in parentheses, which allows the expression to span multiple lines correctly."
 
 ## Observable and Vega-Lite
 
 ### Q1 - markCircle to markSquare
 
-Insert your answer and explanation here
+When I changed it from mark circle to mark square, the plotted marks become squares instead of circles, 
+and the underlying data and axes stay the same.
 
 ### Q2 - markCircle to markPoint
 
-Insert your answer and explanation here
+Similar to above, the data/axes stayed the same, but the plot points became hollow circles. 
 
 ### Q3 - Swap X and Y Axes on Scatterplot
 
-Insert your answer and explanation here
+In order to swap the axes, you just have to swap the fields assigned to x() and y() so that Miles_per_Gallon is used for x and Horsepower is used for y. (vl.y().fieldQ("Horsepower"), etc)
 
 ### Q4 - Remove fieldN(Origin)
 
-Insert your answer and explanation here
+![Vega lite chart](observableReport.png)
+
+Originally, Origin was mapped to he Y axis, so Vega lite separated the records into categories based on Origin. The line was commented out, so there was no longer a variable telling VL to create separate bars. The count() operation still counts the bars, so everything gets added together into one bar representing the total count of records. 
 
 ## References
 
-*Eavery report must include a References section that lists the webpages and URLs that you consulted while completing the assignment. Replace the items below with the references you consulted - these are just examples.* ***Everyone will use some reference to complete these assignments (even I would). You will lose points on your assignment if you do not include the references you used.***
+- Tableau, "Get Started with Tableau Desktop," [https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.htm](https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.htm)
 
-* Graph Network using Vega-Lite or Vega, <https://stackoverflow.com/questions/77096216/graph-network-using-vega-lite-or-vega>
-* Calculating percentage change - Math for journalists, <https://observablehq.com/@nshiab/math-for-journalists>
-* ChatGPT: "How can I add an axis label to my line chart in Seaborn?", <https://chatgpt.com/share/684c8e25-4944-8011-b265-ae9aefc07959>
+- Google Colab, "Overview of Colaboratory Features," [https://colab.research.google.com/notebooks/basic_features_overview.ipynb](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
+
+- Seaborn, "The seaborn.objects interface," [https://seaborn.pydata.org/tutorial/objects_interface.html](https://seaborn.pydata.org/tutorial/objects_interface.html)
+
+- Observable, "Charting with Vega-Lite," [https://observablehq.com/@observablehq/vega-lite](https://observablehq.com/@observablehq/vega-lite)
+
+- ChatGPT, "Questions about Git, Markdown, Python, and Vega-Lite," [ChatGPT](https://chatgpt.com/s/t_6a8dae676774819184cb7944dc9e7825)
