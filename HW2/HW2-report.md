@@ -1,6 +1,9 @@
 WILLIAM GLAVIN
+
 CS 625
+
 FALL 2026
+
 HOMEWORK 2 - DATA CLEANING WITH OPENREFINE
 
 - I first removed leading and trailing whitespace from the pet-type column using the GREL expression value.trim(). This prevented otherwise identical pet types from being treated as separate values.
