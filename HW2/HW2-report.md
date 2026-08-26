@@ -18,6 +18,8 @@ HOMEWORK 2 - DATA CLEANING WITH OPENREFINE
 
 - I used a text facet on the everyday-name field and sorted the values by frequency. I removed whitespace with value.trim() and used clustering to identify capitalization and formatting variations of the same name. I reviewed suggested clusters manually and merged only values that clearly represented the same everyday name.
 
+- I found a small number of records in which respondents entered multiple pets in a single entry. Because the names, breeds, ages, and pet types could not always be reliably associated with individual animals, I removed these records from the cleaned dataset rather than making assumptions when splitting the entries.
+
 ![OpenRefine cleaning](editing_1.png)
 
 ![OpenRefine clustering cleaning](editing_2.png)
@@ -36,8 +38,25 @@ I created a text facet on the cleaned pet-type column and located the standardiz
 
 # Who is the oldest cat in your cleaned dataset? Give the cat's name, breed, and age. If there's a tie, list all oldest cats.
 
-The oldest cat was Bruce Springsteen, everyday name Bruce, age 24, breed just listed as "Cat". I hope that Bruce is still going strong. 
+I filtered the dataset to cats and used a text facet on the cleaned age field to identify the largest age reported in years. The maximum age was 24 years. Filtering to that value returned Bruce Springsteen, everyday name "Bruce", breed just listed as "Cat", making him the oldest cat in the cleaned dataset.
 
 # What is the most popular everyday name for a cat in your cleaned dataset? If there's a tie, list all top names and number of occurrences.
 
 I filtered the dataset to cats and created a text facet on the cleaned everyday-name column. I sorted the facet by count to rank names by frequency. Kitty was the most common everyday cat name, appearing 7 times.
+
+
+## Files
+
+- [Cleaned PetNames Dataset](HW2-petnames.csv)
+- [OpenRefine Cleaning Operations](HW2-petnames.json)
+
+
+## References
+
+- OpenRefine, "OpenRefine User Manual," [https://openrefine.org/docs.html](https://openrefine.org/docs.html)
+
+- OpenRefine, "Exploring Facets," [https://openrefine.org/docs/manual/facets](https://openrefine.org/docs/manual/facets)
+
+- OpenRefine, "General Refine Expression Language (GREL)," [https://openrefine.org/docs/manual/grel](https://openrefine.org/docs/manual/grel)
+
+- OpenRefine, "Clustering Methods In-depth," [https://openrefine.org/docs/technical-reference/clustering-in-depth](https://openrefine.org/docs/technical-reference/clustering-in-depth)
