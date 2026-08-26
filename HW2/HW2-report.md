@@ -15,7 +15,21 @@
 ![OpenRefine clustering cleaning](editing_2.png)
 
 # How many kinds of pets are in your cleaned dataset?
+
+I created a text facet on the cleaned pet-type column. The facet contained 50 unique choices, meaning there were 50 kinds of pets in the cleaned dataset. If I were to do a more thorough cleaning, I would guess that number would whittle down to about 40 or so. 
+
 # How many breeds of dogs are in your cleaned dataset?
+
+I filtered the cleaned pet-type facet to "Dog" and created a text facet on the breed column. After excluding blank and unknown breed values, the facet contained 445 unique dog breeds. Again with further cleaning I would guess this would be around 400 or so. People certainly get creative when describing their pets. 
+
 # How many guinea pigs are in your cleaned dataset?
+
+I created a text facet on the cleaned pet-type column and located the standardized "Guinea Pig" value. There were 10 records, meaning the cleaned dataset contained 10 guinea pigs.
+
 # Who is the oldest cat in your cleaned dataset? Give the cat's name, breed, and age. If there's a tie, list all oldest cats.
+
+The oldest cat was Bruce Springsteen, everyday name Bruce, age 24, breed just listed as "Cat". I hope that Bruce is still going strong. 
+
 # What is the most popular everyday name for a cat in your cleaned dataset? If there's a tie, list all top names and number of occurrences.
+
+I filtered the dataset to cats and created a text facet on the cleaned everyday-name column. I sorted the facet by count to rank names by frequency. Kitty was the most common everyday cat name, appearing 7 times.
