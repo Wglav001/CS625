@@ -25,7 +25,7 @@ A multiple-line chart is appropriate because the visualization compares changes 
 
 The chart was customized with descriptive axis labels, a title, separate colors for each state, and point markers for the individual observations. The year field was treated as continuous so that the spacing reflects the years represented in the source data.
 
-![Overseas Visitors Line Chart](HW3\ML-visitors.png)
+![Overseas Visitors Line Chart](ML-visitors.png)
 
 ---
 
@@ -46,7 +46,7 @@ A scatterplot is appropriate because both acreage and number of visitors are qua
 
 The visualization was customized with descriptive axis titles and state information in the tooltip. A linear trend line was added to help show the overall relationship between acreage and visitation. Individual states were kept as separate observations, including outliers such as Alaska rather than removing them from the data.
 
-![State Park Scatterplot](HW3\scatter-state-parks.png)
+![State Park Scatterplot](scatter-state-parks.png)
 
 ---
 
@@ -67,7 +67,7 @@ A bar chart is appropriate because the goal is to compare one quantitative value
 
 The bars were sorted from highest to lowest population. Data labels were added to show the exact population represented by each bar, and the title and axis labels were edited to clearly describe the data and its units.
 
-![Pet Population Tableau Bar Chart](HW3\Bar-pets.png)
+![Pet Population Tableau Bar Chart](Bar-pets.png)
 
 ---
 
@@ -86,8 +86,8 @@ The companion pet population bar chart was recreated using Vega-Lite in Observab
 
 The Vega-Lite visualization uses the same four pet categories and population values as the Tableau visualization. The data was defined directly in the Observable notebook because only four observations were required for the chart.
 
-![Pet Population Vega-Lite Bar Chart](HW3\Bar-Observable.png)
-![Pet Population Vega-Lite Bar Chart](HW3\Bar-Observable2.png)
+![Pet Population Vega-Lite Bar Chart](Bar-Observable.png)
+![Pet Population Vega-Lite Bar Chart](Bar-Observable2.png)
 ---
 
 ## Discussion
