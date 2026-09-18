@@ -1,16 +1,24 @@
+# William Glavin
+# CS 625 - Homework 3
+# September 2026
+
 # HW3 - Visualization Idioms
 
 ## Data
 
-The data used for these visualizations comes from the U.S. Census Bureau's *Statistical Abstract of the United States: 2012*. Three tables were selected to create a multiple-line chart, scatterplot, and simple bar chart. The data was cleaned and reduced to the fields needed for each visualization before being imported into Tableau or used in Vega-Lite.
+The data used for these visualizations comes from the U.S. Census Bureau's *Statistical Abstract of the United States: 2012*. I used three tables from Section 26: Arts, Recreation, and Travel, to create the three different types of charts.
 
-For visualizations involving states, aggregate values such as the United States total and the District of Columbia were excluded when applicable.
+For the multiple-line chart, I used Table 1261, *Top States and Cities Visited by Overseas Travelers: 2000 to 2010*. I selected five state areas that had complete data for the reported years: New York, Florida, California, Nevada, and the Hawaiian Islands. I copied the values I needed into a smaller spreadsheet and changed the data into long format with columns for state, year, and overseas visitors. Using five states kept the chart readable while still giving enough lines to compare changes over time.
 
----
+For the scatterplot, I used Table 1253 *State Park and Recreation Areas by State: 2010*. I kept the state, acreage, and visitor columns needed for the chart and removed the United States aggregate row. This left each state as its own observation in the scatterplot.
+
+For the bar chart, I used Table 1241 *Household Pet Ownership: 2006*. I selected the total companion pet population values for dogs, cats, birds, and horses and created a smaller spreadsheet containing the pet type and population in millions. The same four values were entered directly into Observable for the Vega-Lite recreation.
+
 
 ## Chart 1: Overseas Visitors to Selected U.S. States
 
 This multiple-line chart shows the number of overseas visitors to five selected U.S. state areas from 2000 through 2010. The data comes from Table 1261, *Top States and Cities Visited by Overseas Travelers: 2000 to 2010*. Five state areas with complete values for the reported years were selected to keep the visualization readable while still allowing trends between states to be compared.
+
 
 A multiple-line chart is appropriate because the visualization compares changes in a quantitative variable over time across multiple categorical values. Each line represents one state area, allowing differences in both overall visitor levels and changes over time to be seen.
 
@@ -26,6 +34,7 @@ A multiple-line chart is appropriate because the visualization compares changes 
 The chart was customized with descriptive axis labels, a title, separate colors for each state, and point markers for the individual observations. The year field was treated as continuous so that the spacing reflects the years represented in the source data.
 
 ![Overseas Visitors Line Chart](ML-visitors.png)
+[Tableau workbook](HW3-Tableau.twbx)
 
 ---
 
@@ -47,12 +56,13 @@ A scatterplot is appropriate because both acreage and number of visitors are qua
 The visualization was customized with descriptive axis titles and state information in the tooltip. A linear trend line was added to help show the overall relationship between acreage and visitation. Individual states were kept as separate observations, including outliers such as Alaska rather than removing them from the data.
 
 ![State Park Scatterplot](scatter-state-parks.png)
+[Tableau workbook](HW3-Scatterplot.twbx)
 
 ---
 
 ## Chart 3: U.S. Companion Pet Population by Type
 
-This simple bar chart uses data from Table 1241, *Household Pet Ownership: 2006*. The visualization uses the reported total companion pet populations for dogs, cats, birds, and horses, measured in millions.
+This bar chart uses data from Table 1241, *Household Pet Ownership: 2006*. The visualization uses the reported total companion pet populations for dogs, cats, birds, and horses, measured in millions.
 
 A bar chart is appropriate because the goal is to compare one quantitative value across a small number of categorical groups. The common baseline makes differences in pet populations easy to compare.
 
@@ -68,12 +78,13 @@ A bar chart is appropriate because the goal is to compare one quantitative value
 The bars were sorted from highest to lowest population. Data labels were added to show the exact population represented by each bar, and the title and axis labels were edited to clearly describe the data and its units.
 
 ![Pet Population Tableau Bar Chart](Bar-pets.png)
+[Tableau workbook](HW3-Bar.twbx)
 
 ---
 
 ## Chart 4: U.S. Companion Pet Population by Type - Vega-Lite Recreation
 
-The companion pet population bar chart was recreated using Vega-Lite in Observable. The same data and basic visual encodings used in the Tableau version were retained so that the results produced by the two visualization tools could be directly compared.
+The companion pet population bar chart was recreated using Observable. The same data and basic visual encodings used in the Tableau version were retained so that the results produced by the two visualization tools could be directly compared.
 
 | Component | Description |
 | --- | --- |
@@ -88,6 +99,8 @@ The Vega-Lite visualization uses the same four pet categories and population val
 
 ![Pet Population Vega-Lite Bar Chart](Bar-Observable.png)
 ![Pet Population Vega-Lite Bar Chart](Bar-Observable2.png)
+
+[View the Vega-Lite notebook in Observable](https://observablehq.com/d/73849661474ced08)
 ---
 
 ## Discussion
