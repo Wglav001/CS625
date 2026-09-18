@@ -86,6 +86,8 @@ The bars were sorted from highest to lowest population. Data labels were added t
 
 The companion pet population bar chart was recreated using Observable. The same data and basic visual encodings used in the Tableau version were retained so that the results produced by the two visualization tools could be directly compared.
 
+A bar chart is appropriate for this data because it compares a quantitative value, population, across a small number of categorical pet types. Using the same idiom also makes it possible to directly compare the Observable  recreation with the original Tableau chart.
+
 | Component | Description |
 | --- | --- |
 | Idiom | Simple bar chart |
@@ -109,7 +111,7 @@ Tableau and Vega-Lite provide different approaches to creating the same visualiz
 
 Vega-Lite uses a more explicit, code-based approach. The data, mark type, and visual encodings are defined in the visualization specification. Creating the bar chart required specifying that pet type was a nominal field on the x-axis and population was a quantitative field on the y-axis. Although this required more code than the Tableau version, the relationship between the data and its visual encoding was more directly represented in the code.
 
-Both tools produced similar bar charts from the same underlying data. Tableau provided a convenient interactive interface for constructing and modifying the visualization, while Vega-Lite provided a concise and reproducible specification describing how the visualization should be constructed.
+Both tools produced similar bar charts from the same underlying data. Tableau provided a convenient interactive interface for constructing and modifying the visualization, while Vega-Lite provided a concise and reproducible specification describing how the visualization should be constructed. Overall, I found Tableau easier to use and customize for this visualization.
 
 ---
 
@@ -126,3 +128,9 @@ https://www2.census.gov/library/publications/2011/compendia/statab/131ed/tables/
 
 U.S. Census Bureau. Table 1241, *Household Pet Ownership: 2006*.  
 https://www2.census.gov/library/publications/2011/compendia/statab/131ed/tables/12s1241.xls
+
+Vega-Lite. *Vega-Lite Documentation*.  
+https://vega.github.io/vega-lite/
+
+Observable. *Observable Documentation*.  
+https://observablehq.com/documentation/
