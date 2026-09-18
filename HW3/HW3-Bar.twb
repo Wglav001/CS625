@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='d079e1181a3737348738f9c477c5caa713524ec3ca6789bf5983d844ba186af4' _.fcp.WorkbookFingerprinting.true...creator-author-id='d079e1181a3737348738f9c477c5caa713524ec3ca6789bf5983d844ba186af4' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='a117d37f1da4ae5afc495d26864b56cc5ef504e04f12a570815751a3a4941580' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='a117d37f1da4ae5afc495d26864b56cc5ef504e04f12a570815751a3a4941580' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Cleaned (Bar clean)' inline='true' name='federated.0n0qinv0dfn6zm17xy3370dgbi8v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Bar clean' name='excel-direct.0h0bi7304tdau71a12do31010wr8'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Owner/Documents/GitHub/CS625/HW3/Bar clean.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0h0bi7304tdau71a12do31010wr8' name='Cleaned' table='[Cleaned$]' type='table'>
+          <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+            <column datatype='string' name='Pet' ordinal='0' />
+            <column datatype='real' name='Population(millions)' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Cleaned]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B5:no:A1:B5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pet</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Pet]</local-name>
+            <parent-name>[Cleaned]</parent-name>
+            <remote-alias>Pet</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned_045B6F00D804490BB67F5C9FE4AA9958]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population(millions)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population(millions)]</local-name>
+            <parent-name>[Cleaned]</parent-name>
+            <remote-alias>Population(millions)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned_045B6F00D804490BB67F5C9FE4AA9958]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cleaned' datatype='table' name='[__tableau_internal_object_id__].[Cleaned_045B6F00D804490BB67F5C9FE4AA9958]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Cleaned' id='Cleaned_045B6F00D804490BB67F5C9FE4AA9958'>
+            <properties context=''>
+              <relation connection='excel-direct.0h0bi7304tdau71a12do31010wr8' name='Cleaned' table='[Cleaned$]' type='table'>
+                <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Pet' ordinal='0' />
+                  <column datatype='real' name='Population(millions)' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='U.S. Companion Pet Population by Type, 2006'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>U.S. Companion Pet Population by Type, 2006</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cleaned (Bar clean)' name='federated.0n0qinv0dfn6zm17xy3370dgbi8v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n0qinv0dfn6zm17xy3370dgbi8v'>
+            <column datatype='string' name='[Pet]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Population(millions)]' role='measure' type='quantitative' />
+            <column-instance column='[Pet]' derivation='None' name='[none:Pet:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Population(millions)]' derivation='Sum' name='[sum:Population(millions):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0n0qinv0dfn6zm17xy3370dgbi8v].[none:Pet:nk]' direction='DESC' using='[federated.0n0qinv0dfn6zm17xy3370dgbi8v].[sum:Population(millions):qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n0qinv0dfn6zm17xy3370dgbi8v].[sum:Population(millions):qk]</rows>
+        <cols>[federated.0n0qinv0dfn6zm17xy3370dgbi8v].[none:Pet:nk]</cols>
+      </table>
+      <simple-id uuid='{C707C571-391D-4D06-B422-FA6E8C67296B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' maximized='true' name='U.S. Companion Pet Population by Type, 2006'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0n0qinv0dfn6zm17xy3370dgbi8v].[none:Pet:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{839ACC0D-7987-4CAA-8522-844021BBF71C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='U.S. Companion Pet Population by Type, 2006' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
