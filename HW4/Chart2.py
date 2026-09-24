@@ -1,55 +1,71 @@
 import pandas as pd
+import seaborn as sns
 import matplotlib.pyplot as plt
 
-# -------------------------
-# Q2
-# -------------------------
+# Load the cleaned dataset containing all cities
+df = pd.read_csv("temperature_ogsheet.csv")
 
-# Read data containing all cities
-all_df = pd.read_csv("temperature_ogsheet.csv")
+# Remove leading/trailing spaces from column names
+df.columns = df.columns.str.strip()
 
-# Remove whitespace from column names
-all_df.columns = all_df.columns.str.strip()
 
+# Months in chronological order
 months = [
     "January", "February", "March", "April",
     "May", "June", "July", "August",
     "September", "October", "November", "December"
 ]
 
+
 # Create a count for each month
 month_counts = {month: 0 for month in months}
 
-# Find the highest monthly temperature for each city
-# and count every month tied for that city's highest value
-for _, row in all_df.iterrows():
+
+# Find the highest recorded temperature for each city
+for _, row in df.iterrows():
+
     highest_temp = row[months].max()
 
+    # Count each month that is tied for the city's highest temperature
     for month in months:
         if row[month] == highest_temp:
             month_counts[month] += 1
 
+
+# Print counts to check the results
 print(month_counts)
 
 
-# Abbreviated month names for the chart
-month_labels = [
-    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
-]
+# Convert month counts to a DataFrame for the chart
+count_df = pd.DataFrame({
+    "Month": months,
+    "Count": [month_counts[month] for month in months]
+})
 
-counts = list(month_counts.values())
 
+# Define the order of the months
+count_df["Month"] = pd.Categorical(
+    count_df["Month"],
+    categories=months,
+    ordered=True
+)
+
+
+# Create Q2 bar chart
 plt.figure(figsize=(10, 6))
 
-plt.bar(month_labels, counts)
+sns.barplot(
+    data=count_df,
+    x="Month",
+    y="Count"
+)
 
 plt.xlabel("Month")
 plt.ylabel("Number of Cities")
 plt.title("Months with the Highest Recorded Temperature by City")
 
+plt.xticks(rotation=45)
 plt.grid(axis="y", alpha=0.3)
 plt.tight_layout()
 
-plt.savefig("q2_highest_month_counts.png", dpi=300, bbox_inches="tight")
 plt.show()

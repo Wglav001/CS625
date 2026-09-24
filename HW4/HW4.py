@@ -1,4 +1,5 @@
 import pandas as pd
+import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the cleaned five-city dataset
@@ -24,6 +25,15 @@ long_df = df.melt(
     value_name="Record High"
 )
 
+
+# define the order of the months
+long_df["Month"] = pd.Categorical(
+    long_df["Month"],
+    categories=months,
+    ordered=True
+)
+
+
 # Abbreviated month labels
 month_labels = [
     "Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -33,24 +43,22 @@ month_labels = [
 
 
 
-# Create a line for each city
-for city in long_df["Station"].unique():
-    city_data = long_df[long_df["Station"] == city]
+# Create Q1 line chart
+plt.figure(figsize=(10, 6))
 
-    plt.plot(
-        month_labels,
-        city_data["Record High"],
-        marker="o",
-        label=city
-    )
+sns.lineplot(
+    data=long_df,
+    x="Month",
+    y="Record High",
+    hue="Station",
+    marker="o"
+)
 
-
-# Chart labels and formatting
 plt.xlabel("Month")
 plt.ylabel("Record High Temperature (°F)")
 plt.title("Monthly Record High Temperatures for Five U.S. Cities")
 
-plt.legend()
+plt.xticks(rotation=45)
 plt.grid(axis="y", alpha=0.3)
 plt.tight_layout()
 
