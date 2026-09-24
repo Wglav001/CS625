@@ -59,3 +59,4 @@ plt.show()
 # Check that the data loaded correctly
 print(df)
 print(df.columns)
+
