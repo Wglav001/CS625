@@ -62,6 +62,7 @@ plt.xticks(rotation=45)
 plt.grid(axis="y", alpha=0.3)
 plt.tight_layout()
 
+plt.savefig("q1_temperature_5cities.png", dpi=300, bbox_inches="tight")
 plt.show()
 
 # Check that the data loaded correctly
