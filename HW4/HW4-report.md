@@ -5,7 +5,7 @@
 
 ## Dataset
 
-For this assignment, I used Table 379, *Highest Temperature of Record - Selected Cities*, from Section 6, Geography and Environment, of the 2010 Statistical Abstract of the United States. The dataset contains record high temperatures for selected U.S. cities for each month of the year.
+For this assignment I used Table 379, *Highest Temperature of Record - Selected Cities*, from Section 6 - Geography and Environment of the 2010 Statistical Abstract of the United States. The dataset contains record high temperatures for selected U.S. cities for each month of the year.
 
 The data was cleaned before creating the visualizations. Columns that were not necessary for the questions, such as length of record and annual temperature, were removed. The charts were created locally in Python using pandas, Seaborn, and Matplotlib.
 
@@ -20,7 +20,7 @@ The data was cleaned before creating the visualizations. Columns that were not n
 
 ### City Selection
 
-I selected Phoenix, Hartford, New Orleans, Baltimore, and Richmond for a combination of personal interest and differences in climate. Phoenix, Baltimore, and Hartford were selected because I have upcoming marathons in those cities. Phoenix was also of particular interest because of its reputation for extreme heat. I selected New Orleans because I expected its record high temperatures to be comparable to Phoenix, although its summer weather is also strongly associated with high humidity. Finally, I selected Richmond because it is where I live and provides a good point of comparison for the other cities.
+I selected Phoenix, Hartford, New Orleans, Baltimore, and Richmond for a combination of personal interest and differences in climate. Phoenix, Baltimore, and Hartford were selected because I have upcoming marathons in those cities. Phoenix was also of particular interest because of its reputation for extreme heat. I chose New Orleans because I expected its record high temperatures to be comparable to Phoenix, although its summer weather is strongly associated with high humidity. Finally, I selected Richmond because it is where I currently live and provides a good point of comparison for the other cities.
 
 ### Idiom, Mark, Data, and Encode
 
