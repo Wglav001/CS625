@@ -20,7 +20,7 @@ The data was cleaned before creating the visualizations. Columns that were not n
 
 ### City Selection
 
-I selected Phoenix, Hartford, New Orleans, Baltimore, and Richmond for a combination of personal interest and differences in climate. Phoenix, Baltimore, and Hartford were selected because I have upcoming marathons in those cities. Phoenix was also of particular interest because of its reputation for extreme heat. I chose New Orleans because I expected its record high temperatures to be comparable to Phoenix, although its summer weather is strongly associated with high humidity. Finally, I selected Richmond because it is where I currently live and provides a good point of comparison for the other cities.
+I selected Phoenix, Hartford, New Orleans, Baltimore, and Richmond for a combination of personal interest and differences in climate. Phoenix, Baltimore, and Hartford were selected because I have upcoming marathons in those cities (Feb 27, Oct 26, Fall 27 respectively). Phoenix was also of particular interest because of its reputation for extreme heat. I chose New Orleans because I expected its record high temperatures to be comparable to Phoenix, although its summer weather is strongly associated with high humidity. Finally, I selected Richmond because it is where I currently live and provides a good point of comparison for the other cities.
 
 ### Idiom, Mark, Data, and Encode
 
@@ -67,11 +67,11 @@ A horizontal grid was added to make comparisons of temperatures across cities ea
 
 ### Idiom Choice
 
-A bar chart is appropriate for this question because the task is to compare the number of times each month contains a city's highest recorded temperature. The months act as discrete categories, while the number of cities is a quantitative value. Bar length provides a straightforward way to compare these counts and makes the month with the largest count immediately visible.
+A bar chart is appropriate for this question because the task is to compare the number of times each month contains a city's highest recorded temperature. The months act as discrete categories, while the number of cities is a quantitative value. Bar length provide a straightforward way to compare these counts and makes the month with the largest count immediately visible.
 
 ### Insights
 
-July most often contains the highest recorded temperature for a city in the dataset. July was tied for or contained the highest high for 38 cities, followed by August with 27 and June with 16. September accounted for 6 occurrences and October for 1. None of the cities had their highest recorded temperature in January through May or November through December.
+July most often contains the highest recorded temperature for a city in the dataset. July was tied for or contained the highest high for 38 cities/stations, followed by August with 27 and June with 16. September accounted for 6 occurrences and October for 1. None of the cities had their highest recorded temperature in January through May or November through December.
 
 The results show that the highest recorded temperatures are heavily concentrated in the summer months, particularly July and August. The difference between July and the other months is especially visible in the bar chart.
 
@@ -79,7 +79,7 @@ The results show that the highest recorded temperatures are heavily concentrated
 
 All twelve months were retained in the chart, including months with a count of zero. This makes it possible to see that none of the cities in the dataset reached their highest recorded temperature during those months rather than simply omitting them from the visualization.
 
-Ties were also considered when processing the data. If multiple months shared the same highest recorded temperature for a city, each tied month was counted. This avoids arbitrarily assigning the city to only one month when the data shows that its record high occurred in multiple months.
+Ties were also considered when processing the data. If multiple months shared the same highest recorded temperature for a city, each tied month was counted. This avoids assigning the city to only one month when the data shows that its record high occurred in multiple months.
 
 The months were displayed chronologically, and a horizontal grid was included to make the bar heights easier to compare. The y-axis represents the number of cities rather than temperature because this visualization summarizes the frequency with which each month contains a city's highest high.
 
