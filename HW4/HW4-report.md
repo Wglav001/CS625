@@ -20,7 +20,7 @@ The data was cleaned before creating the visualizations. Columns that were not n
 
 ### City Selection
 
-I selected Phoenix, Hartford, New Orleans, Baltimore, and Richmond for a combination of personal interest and differences in climate. Phoenix, Baltimore, and Hartford were selected because I have upcoming marathons in those cities (Feb 27, Oct 26, Fall 27 respectively). Phoenix was also of particular interest because of its reputation for extreme heat. I chose New Orleans because I expected its record high temperatures to be comparable to Phoenix, although its summer weather is strongly associated with high humidity. Finally, I selected Richmond because it is where I currently live and provides a good point of comparison for the other cities.
+I chose Phoenix, Hartford, New Orleans, Baltimore, and Richmond for a combination of personal interests and differences in climate. Phoenix, Baltimore, and Hartford were chosen because I have upcoming marathons in those cities (Feb 27, Oct 26, Fall 27 respectively). Phoenix was also of interest because of its reputation for extreme heat. I chose New Orleans because I expected its record high temperatures to be comparable to Phoenix, although its summer weather is normally associated with high humidity. Finally, I chose Richmond because it's where I currently live and provides a good point of comparison for the other cities.
 
 ### Idiom, Mark, Data, and Encode
 
@@ -33,11 +33,11 @@ I selected Phoenix, Hartford, New Orleans, Baltimore, and Richmond for a combina
 
 ### Idiom Choice
 
-A multiple-line chart is appropriate for this question because the task is to compare how record high temperatures vary across an ordered sequence of months for multiple cities. Position along the x-axis represents the months from January through December, while position on the y-axis represents temperature in degrees Fahrenheit. Using a separate line for each city makes it possible to compare both the overall seasonal pattern and differences between the five cities.
+A multiple-line chart is appropriate for this question because the task is to compare how record high temperatures vary across an ordered sequence of months for multiple cities. Position along the x-axis also represents the months from January through December, while position on the y-axis represents temperature in degrees Fahrenheit. Using separate line for each city makes it possible to compare both the overall seasonal pattern and differences between the five cities.
 
 ### Insights
 
-The chart shows that Phoenix has substantially higher record temperatures than the other four cities during much of the year. Its record temperatures increase rapidly during the spring and reach their highest level in June at 122°F. The other four cities are grouped much more closely together and generally reach their highest temperatures during July or August.
+The chart shows that Phoenix has substantially higher record temperatures than the other four cities during much of the year. Its record temperatures increase rapidly during the spring and reach their highest level in June at 122F. The other four cities are grouped much more closely together and generally reach their highest temperatures during July or August.
 
 New Orleans was particularly interesting because I initially expected its record high temperatures to be closer to those of Phoenix. Instead, its record highs are much more similar to Baltimore, Hartford, and Richmond. This suggests that the extreme summer conditions associated with New Orleans are not explained by record air temperature alone, with humidity likely playing an important role.
 
@@ -77,7 +77,7 @@ The results show that the highest recorded temperatures are heavily concentrated
 
 ### Design Decisions and Customizations
 
-All twelve months were retained in the chart, including months with a count of zero. This makes it possible to see that none of the cities in the dataset reached their highest recorded temperature during those months rather than simply omitting them from the visualization.
+All twelve months were kept in the chart, including months with a count of zero. This makes it possible to see that none of the cities in the dataset reached their highest recorded temperature during those months rather than simply omitting them from the visualization.
 
 Ties were also considered when processing the data. If multiple months shared the same highest recorded temperature for a city, each tied month was counted. This avoids assigning the city to only one month when the data shows that its record high occurred in multiple months.
 
