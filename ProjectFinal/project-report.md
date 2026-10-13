@@ -60,7 +60,7 @@ A line chart is appropriate because the age groups have a meaningful order, and 
 
 Normalization was the most important design decision. Plotting the original values on one shared axis would make some trends difficult to see because the statistics have different scales. Indexing each series to the youngest age group makes their relative changes comparable. I kept the axis labeled and included an explanation of the baseline to make this transformation clear. The final chart was created in **Python using pandas, Seaborn, and Matplotlib**.
 
-The report title, “MLB Hitter Aging: Changes in Plate Discipline and Power,” reflects the overall focus of the project. The chart's headline, “MLB Hitters' Overall Production Stays Stable, But the Numbers Behind It Change with Age,” highlights the main finding: while overall offensive production remains relatively stable across age groups, walk rates increase, strikeout rates decrease, and slugging percentage declines slightly.
+The report title, “MLB Hitter Aging: Changes in Plate Discipline and Power,” reflects the overall focus of the project. The chart's headline, “MLB Hitters' Overall Production Stays Stable, But the Numbers Behind It Change with Age,” emphasizes the unexpected finding that overall offensive production remains relatively stable, even as walk rates increase, strikeout rates decrease, and slugging percentage declines slightly.
 
 ## Final Thoughts
 
