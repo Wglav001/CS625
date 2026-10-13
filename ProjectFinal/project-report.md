@@ -35,8 +35,6 @@ That led me to look beyond the overall measure. I found that the older age group
 **Chart implementation:** [`edaFinal.py`](edaFinal.py)  
 **Chart image:** [`final_statcast_chart.png`](final_statcast_chart.png)
 
-The title, “MLB Hitter Aging: Changes in Plate Discipline and Power,” introduces the overall topic, while the subtitle highlights the main finding: walk rates increase and strikeout rates decrease across age groups, even as overall offensive production remains relatively stable.
-
 ## Findings and Interpretation
 
 The chart compares four batting metrics across the same age groups. Since wOBA, SLG, K%, and BB% use different numerical scales, I indexed each metric to **100 for ages 21–24**. A value of 110 therefore represents a 10% increase relative to the youngest group, not an original batting rate of 110%. The labels at the right show the relative change from ages 21–24 to ages 33–37.
@@ -61,6 +59,8 @@ I initially explored separate charts for wOBA, slugging percentage, isolated pow
 A line chart is appropriate because the age groups have a meaningful order, and the connected points make the direction of each trend easy to follow. The chart uses distinct colors and a legend to identify each metric. A dashed horizontal line at 100 marks the common baseline, while endpoint labels show the relative changes directly. The headline highlights the contrast between stable overall production and changes in the underlying metrics.
 
 Normalization was the most important design decision. Plotting the original values on one shared axis would make some trends difficult to see because the statistics have different scales. Indexing each series to the youngest age group makes their relative changes comparable. I kept the axis labeled and included an explanation of the baseline to make this transformation clear. The final chart was created in **Python using pandas, Seaborn, and Matplotlib**.
+
+The report title, “MLB Hitter Aging: Changes in Plate Discipline and Power,” reflects the overall focus of the project. The chart's headline, “MLB Hitters' Overall Production Stays Stable, But the Numbers Behind It Change with Age,” highlights the main finding: while overall offensive production remains relatively stable across age groups, walk rates increase, strikeout rates decrease, and slugging percentage declines slightly.
 
 ## Final Thoughts
 
