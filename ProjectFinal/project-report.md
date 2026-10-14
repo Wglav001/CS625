@@ -56,7 +56,7 @@ There are important limitations. This is a comparison of qualifying *player-seas
 
 I initially explored separate charts for wOBA, slugging percentage, isolated power, strikeout rate, and walk rate. For the final visualization, I selected **one line chart with four colored lines** so the audience could compare the trends together instead of moving between several figures.
 
-A line chart is appropriate because the age groups have a meaningful order, and the connected points make the direction of each trend easy to follow. The chart uses distinct colors and a legend to identify each metric. A dashed horizontal line at 100 marks the common baseline, while endpoint labels show the relative changes directly. The headline highlights the contrast between stable overall production and changes in the underlying metrics.
+A line chart is appropriate because the age groups have a meaningful order, and the connected points make the direction of each trend easy to follow. The chart uses distinct colors and a legend to identify each metric. A dashed horizontal line at 100 marks the common baseline, while endpoint labels show the relative changes directly. 
 
 Normalization was the most important design decision. Plotting the original values on one shared axis would make some trends difficult to see because the statistics have different scales. Indexing each series to the youngest age group makes their relative changes comparable. I kept the axis labeled and included an explanation of the baseline to make this transformation clear. The final chart was created in **Python using pandas, Seaborn, and Matplotlib**.
 
