@@ -3,9 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# -------------------------
+
 # Load Statcast dataset
-# -------------------------
 
 df = pd.read_csv("stats.csv")
 
@@ -18,9 +17,8 @@ df["age_group"] = pd.cut(
     labels=["21-24", "25-28", "29-32", "33-37"]
 )
 
-# -------------------------
+
 # Calculate age-group averages
-# -------------------------
 
 summary = (
     df.groupby("age_group", observed=True)
@@ -38,10 +36,9 @@ summary = (
 print("Original averages:")
 print(summary.to_string(index=False))
 
-# -------------------------
+
 # Normalize each metric
 # Baseline: ages 21-24 = 100
-# -------------------------
 
 metrics = ["wOBA", "SLG", "Strikeout Rate", "Walk Rate"]
 
@@ -60,9 +57,8 @@ plot_data = summary.melt(
     value_name="Indexed Value"
 )
 
-# -------------------------
+
 # Create final visualization
-# -------------------------
 
 sns.set_theme(style="whitegrid")
 
@@ -115,9 +111,8 @@ ax.set_ylabel(
 
 ax.set_ylim(85, 115)
 
-# -------------------------
+
 # Annotate final percentage changes
-# -------------------------
 
 label_offsets = {
     "wOBA": 0.5,
